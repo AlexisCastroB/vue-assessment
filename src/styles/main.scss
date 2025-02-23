@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+$blue: #222e50;
+
+#app{
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+}
+
+.header, .footer{
+  background-color: $blue;
+  color: white;
+}

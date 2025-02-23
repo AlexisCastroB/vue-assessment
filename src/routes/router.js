@@ -6,17 +6,17 @@ import JobDetails from "@/views/JobDetails.vue";
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "Job Search",
     component: HomePage,
   },
   {
     path: "/jobs",
-    name: "Jobs",
+    name: "Jobs Result",
     component: JobList,
   },
   {
     path: "/jobs/:id",
-    name: "JobDetails",
+    name: "Job Details",
     component: JobDetails,
   },
 ]
@@ -24,6 +24,11 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = to.name;
+  next();
 })
 
 export default router;

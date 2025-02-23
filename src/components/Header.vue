@@ -1,6 +1,12 @@
 <template>
-  <div class="header container">
-    <h1>Header</h1>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col py-5">
+          <h1>Job Search Page</h1>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
