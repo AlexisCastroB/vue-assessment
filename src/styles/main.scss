@@ -2,9 +2,14 @@
 
 $blue: #222e50;
 
+html, body {
+  height: 100%;
+}
+
 #app{
   font-family: "Lexend Deca", sans-serif;
   font-weight: 300;
+  min-height: 100%;
 }
 
 .header, .footer{

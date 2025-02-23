@@ -1,9 +1,10 @@
 <template>
-  <div class="search row my-3">
+  <div class="search row my-5">
     <div class="col-sm-6 mb-3 mb-sm-0">
       <v-text-field v-model="jobTitle"
       :rules="jobTitleRules"
       hide-details="auto"
+      variant="outlined"
       label="Job Title">
       </v-text-field>
     </div>
@@ -13,12 +14,13 @@
           <v-text-field v-model="location"
           :rules="locationRules"
           hide-details="auto"
+          variant="outlined"
           label="Location">
           </v-text-field>
         </div>
         <div class="col-sm-auto">
           <v-btn class="text-none"
-          icon="mdi-magnify "
+          icon="mdi-magnify"
           color="black">
           </v-btn>
         </div>

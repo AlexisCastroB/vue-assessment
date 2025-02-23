@@ -1,14 +1,16 @@
 <template>
-  <div class="filters row my-3">
+  <div class="filters row my-5">
     <div class="col-sm-4">
       <v-select v-model="experience"
         :items="experienceItems"
+        variant="outlined"
         label="Filter by">
       </v-select>
     </div>
     <div class="col-sm-4">
       <v-select v-model="orderBy"
         :items="orderByItems"
+        variant="outlined"
         label="Order by">
       </v-select>
     </div>
