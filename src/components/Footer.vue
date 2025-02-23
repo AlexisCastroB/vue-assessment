@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="container">
+    <div class="container w-md-75 w-lg-50">
       <div class="row">
         <div class="col py-3">
           <p>
