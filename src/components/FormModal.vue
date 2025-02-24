@@ -11,13 +11,13 @@
     v-model="modal"
     width="auto"
   >
-    <v-card>
+    <v-card :loading="loading">
       <template v-slot:text>
         <v-container>
           <v-row>
             <v-col>
               <h3>
-                Applying form for Frontend Developer position in TechCorp
+                Applying form for {{ job.title }} position in {{ job.company }}
               </h3>
               <p>
                 Please fill and submit this form so we can get in contact with you. All fields are required.
@@ -28,31 +28,35 @@
             <v-row>
                 <v-col
                   cols="12"
-                  md="12"
                   lg="4"
+                  md="12"
                 >
                   <v-text-field
-                    v-model="fullName"
-                    :rules="fullNameRules"
+                    append-icon="mdi-close"
                     hide-details="auto"
-                    variant="outlined"
                     label="Full name"
                     required
+                    variant="underlined"
+                    v-model="fullName"
+                    :rules="rules.fullName"
+                    @click:append="fullName = null"
                   >
                   </v-text-field>
                 </v-col>
                 <v-col
                   cols="12"
-                  md="8"
                   lg="4"
+                  md="8"
                 >
                   <v-text-field
-                    v-model="email"
-                    :rules="emailRules"
+                    append-icon="mdi-close"
                     hide-details="auto"
-                    variant="outlined"
                     label="Email"
                     required
+                    variant="underlined"
+                    v-model="email"
+                    :rules="rules.email"
+                    @click:append="email = null"
                   >
                   </v-text-field>
                 </v-col>
@@ -61,22 +65,26 @@
                   md="4"
                 >
                   <v-file-input
-                    v-model="resume"
-                    :rules="resumeRules"
+                    accept="application/pdf,application/msword,.docx,.doc"
+                    append-icon="mdi-paperclip"
                     label="Resume"
-                    variant="outlined"
-                    prepend-icon="mdi-paperclip"
+                    :prepend-icon="null"
                     required
+                    variant="underlined"
+                    v-model="resume"
+                    :rules="rules.resume"
                   >
                   </v-file-input>
                 </v-col>
                 <v-col cols="12">
                   <v-textarea
-                    v-model="coverLetter"
-                    :rules="coverLetterRules"
-                    variant="outlined"
+                    append-icon="mdi-close"
                     label="Cover letter"
                     required
+                    variant="underlined"
+                    v-model="coverLetter"
+                    :rules="rules.coverLetter"
+                    @click:append="coverLetter = null"
                   >
                   </v-textarea>
                 </v-col>
@@ -100,10 +108,10 @@
     </v-card>
   </v-dialog>
   <v-snackbar
-    v-model="showSnackbar"
-    :timeout="5000"
     color="orange-darken-2"
     vertical
+    v-model="showSnackbar"
+    :timeout="5000"
   >
     <h5>
       Form sent successfully.
@@ -115,57 +123,67 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { defineProps, toRefs, ref } from 'vue';
+
+const props = defineProps({ job: Object });
+const { job } = toRefs(props);
 
 const modal = ref(false);
 const showSnackbar = ref(false);
+const loading = ref(false);
 const form = ref(null);
 const fullName = ref(null);
 const email = ref(null);
 const resume = ref(null);
 const coverLetter = ref(null);
-
-const fullNameRules = [
-  value => !!value || 'Full name is required',
-];
-
-const emailRules = [
-  value => {
-    if (value) return true
-    return 'E-mail is required.'
-  },
-  value => {
-    if (/.+@.+\..+/.test(value)) return true
-    return 'E-mail must be valid.'
-  },
-];
-
-const resumeRules = [
-  value => !!value || 'Resume is required',
-  value => {
-    return !value || !value.length || value[0].size < 2000000 || 'Avatar size should be less than 2 MB!'
-  },
-];
-
-const coverLetterRules = [
-  value => !!value || 'Cover letter is required',
-];
+const rules = {
+  'fullName': [
+    value => !!value || 'Full name is required',
+  ],
+  'email': [
+    value => {
+      if (value) return true
+      return 'E-mail is required.'
+    },
+    value => {
+      if (/.+@.+\..+/.test(value)) return true
+      return 'E-mail must be valid.'
+    },
+  ],
+  'resume': [
+    value => !!value || 'Resume is required',
+    value => value.size < 5000000 || 'File size should be less than 5 MB!',
+  ],
+  'coverLetter': [
+    value => !!value || 'Cover letter is required',
+  ],
+}
 
 const submitForm = async () => {
-  const { valid } = await form.value.validate()
-  if(!valid) return false
+  const { valid } = await form.value.validate();
+  if(!valid) return false;
 
-  const formData = new FormData()
-  formData.append('fullName', fullName.value)
-  formData.append('email', email.value)
-  formData.append('resume', resume.value)
-  formData.append('coverLetter', coverLetter.value)
+  loading.value = true;
+  const formData = new FormData();
+  formData.append('fullName', fullName.value);
+  formData.append('email', email.value);
+  formData.append('resume', resume.value);
+  formData.append('coverLetter', coverLetter.value);
 
-  console.log('Form sent successfully.')
-  for(const [key, value] of formData.entries()) {
-    console.log(`${key}: ${value}`)
-  }
-  modal.value = false
-  showSnackbar.value = true
+  // Mocking sent to API
+  setTimeout(async () => {
+    console.log('Form sent successfully.');
+    for(const [key, value] of formData.entries()) {
+      console.log(`${key}: ${value}`);
+    }
+    loading.value = false;
+    modal.value = false;
+    showSnackbar.value = true;
+    
+    fullName.value = null;
+    email.value = null;
+    resume.value = null;
+    coverLetter.value = null;
+  }, "2000");
 }
 </script>

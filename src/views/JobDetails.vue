@@ -41,7 +41,7 @@
           </h5>
         </div>
         <div class="col-md-6 py-4 text-md-end">
-          <FormModal />
+          <FormModal :job="store.jobDetails" />
         </div>
       </div>
       <div class="row">
