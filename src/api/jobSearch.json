@@ -1,0 +1,504 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "category": "Junior",
+      "company": "TechCorp",
+      "description": "We're looking for a Vue.js developer to join our dynamic team. The ideal candidate will have a strong understanding of Vue.js and its core principles, along with experience in building scalable and efficient user interfaces. You will work closely with our design and backend teams to create seamless and responsive web applications. If you are passionate about frontend development and enjoy working in a collaborative environment, this is the perfect role for you. Join us and help shape the future of our digital products.",
+      "location": "Los Angeles",
+      "salary": "$85,000",
+      "date": "2024-09-15"
+    },
+    {
+      "id": 2,
+      "title": "Backend Developer",
+      "category": "Mid-Senior",
+      "company": "DevFirm",
+      "description": "Looking for a Node.js expert to join our backend development team. The ideal candidate will have extensive experience in building and maintaining server-side applications using Node.js. You will be responsible for designing and implementing APIs, optimizing database queries, and ensuring the scalability and security of our backend systems. If you are passionate about backend development and have a strong understanding of RESTful APIs, we want to hear from you. Join us and contribute to the development of cutting-edge software solutions.",
+      "location": "New York",
+      "salary": "$95,000",
+      "date": "2024-09-18"
+    },
+    {
+      "id": 3,
+      "title": "Full Stack Developer",
+      "category": "Mid-Senior",
+      "company": "CodeMasters",
+      "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend technologies. The ideal candidate will have experience with React for frontend development and Node.js for backend development. You will be responsible for building and maintaining web applications from the ground up, ensuring a seamless user experience across all platforms. If you are a problem-solver with a passion for coding and a strong understanding of web development principles, we encourage you to apply. Join our team and help us create innovative digital solutions.",
+      "location": "San Francisco",
+      "salary": "$105,000",
+      "date": "2024-09-20"
+    },
+    {
+      "id": 4,
+      "title": "DevOps Engineer",
+      "category": "Senior",
+      "company": "CloudOps",
+      "description": "We are looking for a DevOps Engineer to join our team and help us streamline our development and deployment processes. The ideal candidate will have experience with CI/CD pipelines, containerization technologies like Docker, and cloud platforms such as AWS or Azure. You will work closely with our development and operations teams to ensure the reliability and scalability of our infrastructure. If you are passionate about automation and have a strong understanding of DevOps best practices, we want to hear from you. Join us and help us build a more efficient and scalable development environment.",
+      "location": "Austin",
+      "salary": "$110,000",
+      "date": "2024-09-22"
+    },
+    {
+      "id": 5,
+      "title": "Data Scientist",
+      "category": "Entry Level",
+      "company": "DataInsights",
+      "description": "We are seeking a Data Scientist to join our team and help us extract valuable insights from large datasets. The ideal candidate will have experience with machine learning algorithms, data visualization tools, and programming languages such as Python or R. You will work closely with our data engineering and business teams to develop predictive models and data-driven solutions. If you are passionate about data science and have a strong analytical mindset, we encourage you to apply. Join us and help us unlock the potential of data to drive business decisions.",
+      "location": "Chicago",
+      "salary": "$120,000",
+      "date": "2024-09-25"
+    },
+    {
+      "id": 6,
+      "title": "Frontend Developer",
+      "category": "Senior",
+      "company": "WebWorks",
+      "description": "We're looking for a skilled Frontend Developer with expertise in React to join our team. The ideal candidate will have a strong understanding of React and its ecosystem, along with experience in building responsive and user-friendly web applications. You will collaborate with our design and backend teams to create seamless user experiences. If you are passionate about frontend development and enjoy working in a fast-paced environment, this is the perfect role for you. Join us and help us build the next generation of web applications.",
+      "location": "Los Angeles",
+      "salary": "$90,000",
+      "date": "2024-09-28"
+    },
+    {
+      "id": 7,
+      "title": "Backend Developer",
+      "category": "Senior",
+      "company": "ServerSide",
+      "description": "We are looking for a Backend Developer with expertise in Python and Django to join our team. The ideal candidate will have experience in building and maintaining server-side applications, designing RESTful APIs, and optimizing database performance. You will work closely with our frontend and DevOps teams to ensure the scalability and security of our backend systems. If you are passionate about backend development and have a strong understanding of web development principles, we want to hear from you. Join us and help us build robust and scalable software solutions.",
+      "location": "Seattle",
+      "salary": "$100,000",
+      "date": "2024-09-30"
+    },
+    {
+      "id": 8,
+      "title": "Full Stack Developer",
+      "category": "Junior",
+      "company": "DevWorks",
+      "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend technologies. The ideal candidate will have experience with Angular for frontend development and Java for backend development. You will be responsible for building and maintaining web applications from the ground up, ensuring a seamless user experience across all platforms. If you are a problem-solver with a passion for coding and a strong understanding of web development principles, we encourage you to apply. Join our team and help us create innovative digital solutions.",
+      "location": "Boston",
+      "salary": "$115,000",
+      "date": "2024-10-01"
+    },
+    {
+      "id": 9,
+      "title": "DevOps Engineer",
+      "category": "Junior",
+      "company": "CloudMasters",
+      "description": "We are looking for a DevOps Engineer to join our team and help us streamline our development and deployment processes. The ideal candidate will have experience with CI/CD pipelines, containerization technologies like Kubernetes, and cloud platforms such as Google Cloud. You will work closely with our development and operations teams to ensure the reliability and scalability of our infrastructure. If you are passionate about automation and have a strong understanding of DevOps best practices, we want to hear from you. Join us and help us build a more efficient and scalable development environment.",
+      "location": "Denver",
+      "salary": "$105,000",
+      "date": "2024-10-03"
+    },
+    {
+      "id": 10,
+      "title": "Data Scientist",
+      "category": "Mid-Senior",
+      "company": "DataWizards",
+      "description": "We are seeking a Data Scientist to join our team and help us extract valuable insights from large datasets. The ideal candidate will have experience with machine learning algorithms, data visualization tools, and programming languages such as Python or R. You will work closely with our data engineering and business teams to develop predictive models and data-driven solutions. If you are passionate about data science and have a strong analytical mindset, we encourage you to apply. Join us and help us unlock the potential of data to drive business decisions.",
+      "location": "Atlanta",
+      "salary": "$125,000",
+      "date": "2024-10-05"
+    },
+    {
+      "id": 11,
+      "title": "Frontend Developer",
+      "category": "Mid-Senior",
+      "company": "UIExperts",
+      "description": "We're looking for a talented Frontend Developer with expertise in Angular to join our team. The ideal candidate will have a strong understanding of Angular and its ecosystem, along with experience in building responsive and user-friendly web applications. You will collaborate with our design and backend teams to create seamless user experiences. If you are passionate about frontend development and enjoy working in a fast-paced environment, this is the perfect role for you. Join us and help us build the next generation of web applications.",
+      "location": "Miami",
+      "salary": "$88,000",
+      "date": "2024-10-07"
+    },
+    {
+      "id": 12,
+      "title": "Backend Developer",
+      "category": "Junior",
+      "company": "APIMasters",
+      "description": "We are looking for a Backend Developer with expertise in Ruby on Rails to join our team. The ideal candidate will have experience in building and maintaining server-side applications, designing RESTful APIs, and optimizing database performance. You will work closely with our frontend and DevOps teams to ensure the scalability and security of our backend systems. If you are passionate about backend development and have a strong understanding of web development principles, we want to hear from you. Join us and help us build robust and scalable software solutions.",
+      "location": "Dallas",
+      "salary": "$98,000",
+      "date": "2024-10-09"
+    },
+    {
+      "id": 13,
+      "title": "Full Stack Developer",
+      "category": "Senior",
+      "company": "CodeCrafters",
+      "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend technologies. The ideal candidate will have experience with Vue.js for frontend development and Python for backend development. You will be responsible for building and maintaining web applications from the ground up, ensuring a seamless user experience across all platforms. If you are a problem-solver with a passion for coding and a strong understanding of web development principles, we encourage you to apply. Join our team and help us create innovative digital solutions.",
+      "location": "Phoenix",
+      "salary": "$112,000",
+      "date": "2024-10-11"
+    },
+    {
+      "id": 14,
+      "title": "DevOps Engineer",
+      "category": "Mid-Senior",
+      "company": "CloudBuilders",
+      "description": "We are looking for a DevOps Engineer to join our team and help us streamline our development and deployment processes. The ideal candidate will have experience with CI/CD pipelines, containerization technologies like Docker, and cloud platforms such as AWS or Azure. You will work closely with our development and operations teams to ensure the reliability and scalability of our infrastructure. If you are passionate about automation and have a strong understanding of DevOps best practices, we want to hear from you. Join us and help us build a more efficient and scalable development environment.",
+      "location": "Portland",
+      "salary": "$108,000",
+      "date": "2024-10-13"
+    },
+    {
+      "id": 15,
+      "title": "Data Scientist",
+      "category": "Senior",
+      "company": "DataGenius",
+      "description": "We are seeking a Data Scientist to join our team and help us extract valuable insights from large datasets. The ideal candidate will have experience with machine learning algorithms, data visualization tools, and programming languages such as Python or R. You will work closely with our data engineering and business teams to develop predictive models and data-driven solutions. If you are passionate about data science and have a strong analytical mindset, we encourage you to apply. Join us and help us unlock the potential of data to drive business decisions.",
+      "location": "Houston",
+      "salary": "$118,000",
+      "date": "2024-10-15"
+    },
+    {
+      "id": 16,
+      "title": "Frontend Developer",
+      "category": "Entry Level",
+      "company": "WebCrafters",
+      "description": "We're looking for a skilled Frontend Developer with expertise in React to join our team. The ideal candidate will have a strong understanding of React and its ecosystem, along with experience in building responsive and user-friendly web applications. You will collaborate with our design and backend teams to create seamless user experiences. If you are passionate about frontend development and enjoy working in a fast-paced environment, this is the perfect role for you. Join us and help us build the next generation of web applications.",
+      "location": "San Diego",
+      "salary": "$92,000",
+      "date": "2024-10-17"
+    },
+    {
+      "id": 17,
+      "title": "Backend Developer",
+      "category": "Entry Level",
+      "company": "ServerMasters",
+      "description": "We are looking for a Backend Developer with expertise in Java and Spring Boot to join our team. The ideal candidate will have experience in building and maintaining server-side applications, designing RESTful APIs, and optimizing database performance. You will work closely with our frontend and DevOps teams to ensure the scalability and security of our backend systems. If you are passionate about backend development and have a strong understanding of web development principles, we want to hear from you. Join us and help us build robust and scalable software solutions.",
+      "location": "Philadelphia",
+      "salary": "$102,000",
+      "date": "2024-10-19"
+    },
+    {
+      "id": 18,
+      "title": "Full Stack Developer",
+      "category": "Entry Level",
+      "company": "CodeInnovators",
+      "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend technologies. The ideal candidate will have experience with React for frontend development and Node.js for backend development. You will be responsible for building and maintaining web applications from the ground up, ensuring a seamless user experience across all platforms. If you are a problem-solver with a passion for coding and a strong understanding of web development principles, we encourage you to apply. Join our team and help us create innovative digital solutions.",
+      "location": "Austin",
+      "salary": "$114,000",
+      "date": "2024-10-21"
+    },
+    {
+      "id": 19,
+      "title": "DevOps Engineer",
+      "category": "Entry Level",
+      "company": "CloudInnovators",
+      "description": "We are looking for a DevOps Engineer to join our team and help us streamline our development and deployment processes. The ideal candidate will have experience with CI/CD pipelines, containerization technologies like Kubernetes, and cloud platforms such as Google Cloud. You will work closely with our development and operations teams to ensure the reliability and scalability of our infrastructure. If you are passionate about automation and have a strong understanding of DevOps best practices, we want to hear from you. Join us and help us build a more efficient and scalable development environment.",
+      "location": "San Francisco",
+      "salary": "$107,000",
+      "date": "2024-10-23"
+    },
+    {
+      "id": 20,
+      "title": "Data Scientist",
+      "category": "Entry Level",
+      "company": "DataPioneers",
+      "description": "We are seeking a Data Scientist to join our team and help us extract valuable insights from large datasets. The ideal candidate will have experience with machine learning algorithms, data visualization tools, and programming languages such as Python or R. You will work closely with our data engineering and business teams to develop predictive models and data-driven solutions. If you are passionate about data science and have a strong analytical mindset, we encourage you to apply. Join us and help us unlock the potential of data to drive business decisions.",
+      "location": "New York",
+      "salary": "$122,000",
+      "date": "2024-10-25"
+    },
+    {
+      "id": 21,
+      "title": "Frontend Developer",
+      "category": "Junior",
+      "company": "WebInnovators",
+      "description": "We're looking for a talented Frontend Developer with expertise in Vue.js to join our team. The ideal candidate will have a strong understanding of Vue.js and its ecosystem, along with experience in building responsive and user-friendly web applications. You will collaborate with our design and backend teams to create seamless user experiences. If you are passionate about frontend development and enjoy working in a fast-paced environment, this is the perfect role for you. Join us and help us build the next generation of web applications.",
+      "location": "Chicago",
+      "salary": "$87,000",
+      "date": "2024-10-27"
+    },
+    {
+      "id": 22,
+      "title": "Backend Developer",
+      "category": "Mid-Senior",
+      "company": "APIBuilders",
+      "description": "We are looking for a Backend Developer with expertise in PHP and Laravel to join our team. The ideal candidate will have experience in building and maintaining server-side applications, designing RESTful APIs, and optimizing database performance. You will work closely with our frontend and DevOps teams to ensure the scalability and security of our backend systems. If you are passionate about backend development and have a strong understanding of web development principles, we want to hear from you. Join us and help us build robust and scalable software solutions.",
+      "location": "Los Angeles",
+      "salary": "$97,000",
+      "date": "2024-10-29"
+    },
+    {
+      "id": 23,
+      "title": "Full Stack Developer",
+      "category": "Leader",
+      "company": "CodeMasters",
+      "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend technologies. The ideal candidate will have experience with Angular for frontend development and Java for backend development. You will be responsible for building and maintaining web applications from the ground up, ensuring a seamless user experience across all platforms. If you are a problem-solver with a passion for coding and a strong understanding of web development principles, we encourage you to apply. Join our team and help us create innovative digital solutions.",
+      "location": "Seattle",
+      "salary": "$113,000",
+      "date": "2024-10-31"
+    },
+    {
+      "id": 24,
+      "title": "DevOps Engineer",
+      "category": "Leader",
+      "company": "CloudOps",
+      "description": "We are looking for a DevOps Engineer to join our team and help us streamline our development and deployment processes. The ideal candidate will have experience with CI/CD pipelines, containerization technologies like Docker, and cloud platforms such as AWS or Azure. You will work closely with our development and operations teams to ensure the reliability and scalability of our infrastructure. If you are passionate about automation and have a strong understanding of DevOps best practices, we want to hear from you. Join us and help us build a more efficient and scalable development environment.",
+      "location": "Boston",
+      "salary": "$106,000",
+      "date": "2024-11-01"
+    },
+    {
+      "id": 25,
+      "title": "Data Scientist",
+      "category": "Junior",
+      "company": "DataInsights",
+      "description": "We are seeking a Data Scientist to join our team and help us extract valuable insights from large datasets. The ideal candidate will have experience with machine learning algorithms, data visualization tools, and programming languages such as Python or R. You will work closely with our data engineering and business teams to develop predictive models and data-driven solutions. If you are passionate about data science and have a strong analytical mindset, we encourage you to apply. Join us and help us unlock the potential of data to drive business decisions.",
+      "location": "Denver",
+      "salary": "$121,000",
+      "date": "2024-11-03"
+    },
+    {
+      "id": 26,
+      "title": "Frontend Developer",
+      "category": "Senior",
+      "company": "WebWorks",
+      "description": "We're looking for a skilled Frontend Developer with expertise in React to join our team. The ideal candidate will have a strong understanding of React and its ecosystem, along with experience in building responsive and user-friendly web applications. You will collaborate with our design and backend teams to create seamless user experiences. If you are passionate about frontend development and enjoy working in a fast-paced environment, this is the perfect role for you. Join us and help us build the next generation of web applications.",
+      "location": "Atlanta",
+      "salary": "$89,000",
+      "date": "2024-11-05"
+    },
+    {
+      "id": 27,
+      "title": "Backend Developer",
+      "category": "Leader",
+      "company": "ServerSide",
+      "description": "We are looking for a Backend Developer with expertise in Python and Django to join our team. The ideal candidate will have experience in building and maintaining server-side applications, designing RESTful APIs, and optimizing database performance. You will work closely with our frontend and DevOps teams to ensure the scalability and security of our backend systems. If you are passionate about backend development and have a strong understanding of web development principles, we want to hear from you. Join us and help us build robust and scalable software solutions.",
+      "location": "Miami",
+      "salary": "$99,000",
+      "date": "2024-11-07"
+    },
+    {
+      "id": 28,
+      "title": "Full Stack Developer",
+      "category": "Mid-Senior",
+      "company": "DevWorks",
+      "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend technologies. The ideal candidate will have experience with Angular for frontend development and Java for backend development. You will be responsible for building and maintaining web applications from the ground up, ensuring a seamless user experience across all platforms. If you are a problem-solver with a passion for coding and a strong understanding of web development principles, we encourage you to apply. Join our team and help us create innovative digital solutions.",
+      "location": "Dallas",
+      "salary": "$111,000",
+      "date": "2024-11-09"
+    },
+    {
+      "id": 29,
+      "title": "DevOps Engineer",
+      "category": "Senior",
+      "company": "CloudMasters",
+      "description": "We are looking for a DevOps Engineer to join our team and help us streamline our development and deployment processes. The ideal candidate will have experience with CI/CD pipelines, containerization technologies like Kubernetes, and cloud platforms such as Google Cloud. You will work closely with our development and operations teams to ensure the reliability and scalability of our infrastructure. If you are passionate about automation and have a strong understanding of DevOps best practices, we want to hear from you. Join us and help us build a more efficient and scalable development environment.",
+      "location": "Phoenix",
+      "salary": "$104,000",
+      "date": "2024-11-11"
+    },
+    {
+      "id": 30,
+      "title": "Data Scientist",
+      "category": "Leader",
+      "company": "DataWizards",
+      "description": "We are seeking a Data Scientist to join our team and help us extract valuable insights from large datasets. The ideal candidate will have experience with machine learning algorithms, data visualization tools, and programming languages such as Python or R. You will work closely with our data engineering and business teams to develop predictive models and data-driven solutions. If you are passionate about data science and have a strong analytical mindset, we encourage you to apply. Join us and help us unlock the potential of data to drive business decisions.",
+      "location": "Portland",
+      "salary": "$119,000",
+      "date": "2024-11-13"
+    },
+    {
+      "id": 31,
+      "title": "Frontend Developer",
+      "category": "Mid-Senior",
+      "company": "UIExperts",
+      "description": "We're looking for a talented Frontend Developer with expertise in Angular to join our team. The ideal candidate will have a strong understanding of Angular and its ecosystem, along with experience in building responsive and user-friendly web applications. You will collaborate with our design and backend teams to create seamless user experiences. If you are passionate about frontend development and enjoy working in a fast-paced environment, this is the perfect role for you. Join us and help us build the next generation of web applications.",
+      "location": "Houston",
+      "salary": "$86,000",
+      "date": "2024-11-15"
+    },
+    {
+      "id": 32,
+      "title": "Backend Developer",
+      "category": "Senior",
+      "company": "APIMasters",
+      "description": "We are looking for a Backend Developer with expertise in Ruby on Rails to join our team. The ideal candidate will have experience in building and maintaining server-side applications, designing RESTful APIs, and optimizing database performance. You will work closely with our frontend and DevOps teams to ensure the scalability and security of our backend systems. If you are passionate about backend development and have a strong understanding of web development principles, we want to hear from you. Join us and help us build robust and scalable software solutions.",
+      "location": "San Diego",
+      "salary": "$96,000",
+      "date": "2024-11-17"
+    },
+    {
+      "id": 33,
+      "title": "Full Stack Developer",
+      "category": "Junior",
+      "company": "CodeCrafters",
+      "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend technologies. The ideal candidate will have experience with Vue.js for frontend development and Python for backend development. You will be responsible for building and maintaining web applications from the ground up, ensuring a seamless user experience across all platforms. If you are a problem-solver with a passion for coding and a strong understanding of web development principles, we encourage you to apply. Join our team and help us create innovative digital solutions.",
+      "location": "Philadelphia",
+      "salary": "$110,000",
+      "date": "2024-11-19"
+    },
+    {
+      "id": 34,
+      "title": "DevOps Engineer",
+      "category": "Leader",
+      "company": "CloudBuilders",
+      "description": "We are looking for a DevOps Engineer to join our team and help us streamline our development and deployment processes. The ideal candidate will have experience with CI/CD pipelines, containerization technologies like Docker, and cloud platforms such as AWS or Azure. You will work closely with our development and operations teams to ensure the reliability and scalability of our infrastructure. If you are passionate about automation and have a strong understanding of DevOps best practices, we want to hear from you. Join us and help us build a more efficient and scalable development environment.",
+      "location": "Austin",
+      "salary": "$103,000",
+      "date": "2024-11-21"
+    },
+    {
+      "id": 35,
+      "title": "Data Scientist",
+      "category": "Junior",
+      "company": "DataGenius",
+      "description": "We are seeking a Data Scientist to join our team and help us extract valuable insights from large datasets. The ideal candidate will have experience with machine learning algorithms, data visualization tools, and programming languages such as Python or R. You will work closely with our data engineering and business teams to develop predictive models and data-driven solutions. If you are passionate about data science and have a strong analytical mindset, we encourage you to apply. Join us and help us unlock the potential of data to drive business decisions.",
+      "location": "San Francisco",
+      "salary": "$117,000",
+      "date": "2024-11-23"
+    },
+    {
+      "id": 36,
+      "title": "Frontend Developer",
+      "category": "Junior",
+      "company": "WebCrafters",
+      "description": "We're looking for a skilled Frontend Developer with expertise in React to join our team. The ideal candidate will have a strong understanding of React and its ecosystem, along with experience in building responsive and user-friendly web applications. You will collaborate with our design and backend teams to create seamless user experiences. If you are passionate about frontend development and enjoy working in a fast-paced environment, this is the perfect role for you. Join us and help us build the next generation of web applications.",
+      "location": "New York",
+      "salary": "$91,000",
+      "date": "2024-11-25"
+    },
+    {
+      "id": 37,
+      "title": "Backend Developer",
+      "category": "Leader",
+      "company": "ServerMasters",
+      "description": "We are looking for a Backend Developer with expertise in Java and Spring Boot to join our team. The ideal candidate will have experience in building and maintaining server-side applications, designing RESTful APIs, and optimizing database performance. You will work closely with our frontend and DevOps teams to ensure the scalability and security of our backend systems. If you are passionate about backend development and have a strong understanding of web development principles, we want to hear from you. Join us and help us build robust and scalable software solutions.",
+      "location": "Chicago",
+      "salary": "$101,000",
+      "date": "2024-11-27"
+    },
+    {
+      "id": 38,
+      "title": "Full Stack Developer",
+      "category": "Senior",
+      "company": "CodeInnovators",
+      "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend technologies. The ideal candidate will have experience with React for frontend development and Node.js for backend development. You will be responsible for building and maintaining web applications from the ground up, ensuring a seamless user experience across all platforms. If you are a problem-solver with a passion for coding and a strong understanding of web development principles, we encourage you to apply. Join our team and help us create innovative digital solutions.",
+      "location": "Los Angeles",
+      "salary": "$113,000",
+      "date": "2024-11-29"
+    },
+    {
+      "id": 39,
+      "title": "DevOps Engineer",
+      "category": "Entry Level",
+      "company": "CloudInnovators",
+      "description": "We are looking for a DevOps Engineer to join our team and help us streamline our development and deployment processes. The ideal candidate will have experience with CI/CD pipelines, containerization technologies like Kubernetes, and cloud platforms such as Google Cloud. You will work closely with our development and operations teams to ensure the reliability and scalability of our infrastructure. If you are passionate about automation and have a strong understanding of DevOps best practices, we want to hear from you. Join us and help us build a more efficient and scalable development environment.",
+      "location": "Seattle",
+      "salary": "$106,000",
+      "date": "2024-12-01"
+    },
+    {
+      "id": 40,
+      "title": "Data Scientist",
+      "category": "Mid-Senior",
+      "company": "DataPioneers",
+      "description": "We are seeking a Data Scientist to join our team and help us extract valuable insights from large datasets. The ideal candidate will have experience with machine learning algorithms, data visualization tools, and programming languages such as Python or R. You will work closely with our data engineering and business teams to develop predictive models and data-driven solutions. If you are passionate about data science and have a strong analytical mindset, we encourage you to apply. Join us and help us unlock the potential of data to drive business decisions.",
+      "location": "Boston",
+      "salary": "$120,000",
+      "date": "2024-12-03"
+    },
+    {
+      "id": 41,
+      "title": "Frontend Developer",
+      "category": "Entry Level",
+      "company": "WebInnovators",
+      "description": "We're looking for a talented Frontend Developer with expertise in Vue.js to join our team. The ideal candidate will have a strong understanding of Vue.js and its ecosystem, along with experience in building responsive and user-friendly web applications. You will collaborate with our design and backend teams to create seamless user experiences. If you are passionate about frontend development and enjoy working in a fast-paced environment, this is the perfect role for you. Join us and help us build the next generation of web applications.",
+      "location": "Denver",
+      "salary": "$88,000",
+      "date": "2024-12-05"
+    },
+    {
+      "id": 42,
+      "title": "Backend Developer",
+      "category": "Mid-Senior",
+      "company": "APIBuilders",
+      "description": "We are looking for a Backend Developer with expertise in PHP and Laravel to join our team. The ideal candidate will have experience in building and maintaining server-side applications, designing RESTful APIs, and optimizing database performance. You will work closely with our frontend and DevOps teams to ensure the scalability and security of our backend systems. If you are passionate about backend development and have a strong understanding of web development principles, we want to hear from you. Join us and help us build robust and scalable software solutions.",
+      "location": "Atlanta",
+      "salary": "$98,000",
+      "date": "2024-12-07"
+    },
+    {
+      "id": 43,
+      "title": "Full Stack Developer",
+      "category": "Entry Level",
+      "company": "CodeMasters",
+      "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend technologies. The ideal candidate will have experience with Angular for frontend development and Java for backend development. You will be responsible for building and maintaining web applications from the ground up, ensuring a seamless user experience across all platforms. If you are a problem-solver with a passion for coding and a strong understanding of web development principles, we encourage you to apply. Join our team and help us create innovative digital solutions.",
+      "location": "Miami",
+      "salary": "$112,000",
+      "date": "2024-12-09"
+    },
+    {
+      "id": 44,
+      "title": "DevOps Engineer",
+      "category": "Junior",
+      "company": "CloudOps",
+      "description": "We are looking for a DevOps Engineer to join our team and help us streamline our development and deployment processes. The ideal candidate will have experience with CI/CD pipelines, containerization technologies like Docker, and cloud platforms such as AWS or Azure. You will work closely with our development and operations teams to ensure the reliability and scalability of our infrastructure. If you are passionate about automation and have a strong understanding of DevOps best practices, we want to hear from you. Join us and help us build a more efficient and scalable development environment.",
+      "location": "Dallas",
+      "salary": "$105,000",
+      "date": "2024-12-11"
+    },
+    {
+      "id": 45,
+      "title": "Data Scientist",
+      "category": "Senior",
+      "company": "DataInsights",
+      "description": "We are seeking a Data Scientist to join our team and help us extract valuable insights from large datasets. The ideal candidate will have experience with machine learning algorithms, data visualization tools, and programming languages such as Python or R. You will work closely with our data engineering and business teams to develop predictive models and data-driven solutions. If you are passionate about data science and have a strong analytical mindset, we encourage you to apply. Join us and help us unlock the potential of data to drive business decisions.",
+      "location": "Phoenix",
+      "salary": "$119,000",
+      "date": "2024-12-13"
+    },
+    {
+      "id": 46,
+      "title": "Frontend Developer",
+      "category": "Leader",
+      "company": "WebWorks",
+      "description": "We're looking for a skilled Frontend Developer with expertise in React to join our team. The ideal candidate will have a strong understanding of React and its ecosystem, along with experience in building responsive and user-friendly web applications. You will collaborate with our design and backend teams to create seamless user experiences. If you are passionate about frontend development and enjoy working in a fast-paced environment, this is the perfect role for you. Join us and help us build the next generation of web applications.",
+      "location": "Portland",
+      "salary": "$90,000",
+      "date": "2024-12-15"
+    },
+    {
+      "id": 47,
+      "title": "Backend Developer",
+      "category": "Junior",
+      "company": "ServerSide",
+      "description": "We are looking for a Backend Developer with expertise in Python and Django to join our team. The ideal candidate will have experience in building and maintaining server-side applications, designing RESTful APIs, and optimizing database performance. You will work closely with our frontend and DevOps teams to ensure the scalability and security of our backend systems. If you are passionate about backend development and have a strong understanding of web development principles, we want to hear from you. Join us and help us build robust and scalable software solutions.",
+      "location": "Houston",
+      "salary": "$100,000",
+      "date": "2024-12-17"
+    },
+    {
+      "id": 48,
+      "title": "Full Stack Developer",
+      "category": "Leader",
+      "company": "DevWorks",
+      "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend technologies. The ideal candidate will have experience with Angular for frontend development and Java for backend development. You will be responsible for building and maintaining web applications from the ground up, ensuring a seamless user experience across all platforms. If you are a problem-solver with a passion for coding and a strong understanding of web development principles, we encourage you to apply. Join our team and help us create innovative digital solutions.",
+      "location": "San Diego",
+      "salary": "$114,000",
+      "date": "2024-12-19"
+    },
+    {
+      "id": 49,
+      "title": "DevOps Engineer",
+      "category": "Mid-Senior",
+      "company": "CloudMasters",
+      "description": "We are looking for a DevOps Engineer to join our team and help us streamline our development and deployment processes. The ideal candidate will have experience with CI/CD pipelines, containerization technologies like Kubernetes, and cloud platforms such as Google Cloud. You will work closely with our development and operations teams to ensure the reliability and scalability of our infrastructure. If you are passionate about automation and have a strong understanding of DevOps best practices, we want to hear from you. Join us and help us build a more efficient and scalable development environment.",
+      "location": "Philadelphia",
+      "salary": "$107,000",
+      "date": "2024-12-21"
+    },
+    {
+      "id": 50,
+      "title": "Data Scientist",
+      "category": "Senior",
+      "company": "DataWizards",
+      "description": "We are seeking a Data Scientist to join our team and help us extract valuable insights from large datasets. The ideal candidate will have experience with machine learning algorithms, data visualization tools, and programming languages such as Python or R. You will work closely with our data engineering and business teams to develop predictive models and data-driven solutions. If you are passionate about data science and have a strong analytical mindset, we encourage you to apply. Join us and help us unlock the potential of data to drive business decisions.",
+      "location": "Austin",
+      "salary": "$121,000",
+      "date": "2024-12-23"
+    }
+  ]
+}

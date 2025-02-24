@@ -3,9 +3,12 @@
     <div class="container mt-4 w-md-75 w-lg-50">
       <div class="row">
         <div class="col">
-          <v-btn class="text-none pa-0"
-          prepend-icon="mdi-chevron-left"
-          variant="plain">
+          <v-btn
+            class="text-none pa-0"
+            prepend-icon="mdi-chevron-left"
+            variant="plain"
+            @click="goBack()"
+          >
             Search results
           </v-btn>
         </div>
@@ -13,33 +16,32 @@
       <div class="row">
         <div class="col-md-6 py-4">
           <small class="m-0">
-            Posted on September 15, 2023
+            Posted on {{ dayjs(store.jobDetails.date).format('MMMM DD, YYYY') }}
           </small>
-          <h3>
-            Frontend Developer
+          <h3 class="my-3">
+            {{ store.jobDetails.title }}
           </h3>
           <v-chip>
-            Junior
+            {{ store.jobDetails.category }}
           </v-chip>
           <p class="mb-1">
             <small class="text-grey w-100">
-              $85,000 yearly
+              {{ store.jobDetails.salary }} yearly
             </small>
           </p>
-          <p><v-icon icon="mdi-map-marker"></v-icon>Los Angeles</p>
+          <p>
+            <v-icon icon="mdi-map-marker"></v-icon>
+            {{ store.jobDetails.location }}
+          </p>
           <h5 class="text-grey">
             <v-avatar color="grey">
               <span class="text-h6">TC</span>
             </v-avatar>
-            TechCorp
+            {{ store.jobDetails.company }}
           </h5>
         </div>
         <div class="col-md-6 py-4 text-md-end">
           <FormModal />
-          <!-- <v-btn class="text-none"
-          color="black">
-            Apply Now
-          </v-btn> -->
         </div>
       </div>
       <div class="row">
@@ -53,7 +55,7 @@
             Job Details
           </h5>
           <p>
-            We're looking for a Vue.js developer to join our dynamic team. The ideal candidate will have a strong understanding of Vue.js and its core principles, along with experience in building scalable and efficient user interfaces. You will work closely with our design and backend teams to create seamless and responsive web applications. If you are passionate about frontend development and enjoy working in a collaborative environment, this is the perfect role for you. Join us and help shape the future of our digital products.
+            {{ store.jobDetails.description}}
           </p>
         </div>
       </div>
@@ -63,5 +65,15 @@
 
 <script setup>
 import FormModal from '@/components/FormModal.vue';
+import { useRoute, useRouter } from 'vue-router';
+import { useJobListStore } from '@/stores/jobList';
+import dayjs from 'dayjs';
 
+const { params } = useRoute();
+const router = useRouter();
+const store = useJobListStore();
+store.getJob(params.id)
+const goBack = () => {
+  router.go(-1)
+}
 </script>

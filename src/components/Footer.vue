@@ -11,18 +11,22 @@
           <p>
             <small>
               Developed by 
-              <a class="link-light"
-              href="https://www.linkedin.com/in/alexis-cb/"
-              target="_blank">
+              <a
+                class="link-light"
+                href="https://www.linkedin.com/in/alexis-cb/"
+                target="_blank"
+              >
                 Alexis Castro
               </a>
             </small>
           </p>
           <p>
             <small>
-              <a class="link-light"
-              href="https://www.flaticon.com/authors/manshagraphics"
-              target="_blank">
+              <a
+                class="link-light"
+                href="https://www.flaticon.com/authors/manshagraphics"
+                target="_blank"
+              >
                 Favicon created by manshagraphics - Flaticon
               </a>
             </small>
@@ -32,7 +36,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-
-</script>

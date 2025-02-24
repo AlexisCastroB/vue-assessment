@@ -1,18 +1,22 @@
 <template>
     <div class="job-card col-sm-6 col-md-4 pb-4">
-      <RouterLink class="text-dark text-decoration-none"
-      :to="{ name: 'Job Details', params: { id: 1 } }">
-        <v-card title="Frontend Developer"
-        subtitle="Los Angeles"
-        text="September 15, 2023"
-        elevation="4"
-        link>
+      <RouterLink
+        class="text-dark text-decoration-none"
+        :to="{ name: 'Job Details', params: { id: job.id } }"
+      >
+        <v-card
+          :title="job.title"
+          :subtitle="job.location"
+          :text="dayjs(job.date).format('MMMM DD, YYYY')"
+          elevation="4"
+          link
+        >
           <v-card-actions>
             <v-chip>
-              Junior
+              {{ job.category }}
             </v-chip>
             <v-chip variant="text">
-              $85,000
+              {{ job.salary }}
             </v-chip>
           </v-card-actions>
         </v-card>
@@ -21,5 +25,9 @@
 </template>
 
 <script setup>
+import { defineProps, toRefs } from 'vue';
+import dayjs from 'dayjs';
 
+const props = defineProps({ job: Object });
+const { job } = toRefs(props)
 </script>
