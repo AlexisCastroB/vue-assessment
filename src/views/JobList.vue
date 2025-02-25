@@ -11,8 +11,8 @@
         <Search />
         <Filters />
       <div
-        class="row d-flex"
         v-if="store.filteredResults.length"
+        class="row d-flex"
       >
         <JobCard
           v-for="job in store.filteredResults"
@@ -21,8 +21,8 @@
         />
       </div>
       <div
-        class="row d-flex"
         v-else
+        class="row d-flex"
       >
         <div class="col my-5">
           <h5>
@@ -42,7 +42,7 @@ import Filters from '@/components/Filters.vue';
 import JobCard from '@/components/JobCard.vue';
 import Search from '@/components/Search.vue';
 import { useRoute } from 'vue-router';
-import { useJobListStore } from '@/stores/jobList';
+import { useJobListStore } from '@/stores/jobListStore';
 
 const {query} = useRoute();
 const store = useJobListStore();

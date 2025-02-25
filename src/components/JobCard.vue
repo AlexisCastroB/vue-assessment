@@ -5,11 +5,11 @@
         :to="{ name: 'Job Details', params: { id: job.id } }"
       >
         <v-card
-          :title="job.title"
-          :subtitle="job.location"
-          :text="dayjs(job.date).format('MMMM DD, YYYY')"
           elevation="4"
           link
+          :subtitle="job.location"
+          :text="dayjs(job.date).format('MMMM DD, YYYY')"
+          :title="job.title"
         >
           <v-card-actions>
             <v-chip>

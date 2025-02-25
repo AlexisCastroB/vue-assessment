@@ -66,7 +66,7 @@
 <script setup>
 import FormModal from '@/components/FormModal.vue';
 import { useRoute, useRouter } from 'vue-router';
-import { useJobListStore } from '@/stores/jobList';
+import { useJobListStore } from '@/stores/jobListStore';
 import dayjs from 'dayjs';
 
 const { params } = useRoute();

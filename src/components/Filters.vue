@@ -1,30 +1,52 @@
 <template>
   <div class="filters row my-5">
-    <div class="col-sm-4">
-      <v-select
+    <div class="col-sm-4 my-2">
+      <div class="form-floating">
+        <select
+        class="form-select"
+        id="filterBy"
         v-model="experience"
-        variant="outlined"
-        label="Filter by"
-        @update:model-value="store.setFilters"
-        :items="experienceItems"
-      >
-      </v-select>
+        @change="store.setFilters($event.target.value)"
+        >
+          <option 
+            v-for="option in experienceItems"
+            :value="option"
+            :key="option"
+          >
+            {{ option }}
+          </option>
+        </select>
+        <label for="filterBy">
+          Filter by
+        </label>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <v-select
+    <div class="col-sm-4 my-2">
+      <div class="form-floating">
+        <select
+        class="form-select"
+        id="orderBy"
         v-model="orderList"
-        variant="outlined"
-        label="Order by"
-        @update:model-value="store.setOrder"
-        :items="orderByItems"
-      >
-      </v-select>
+        @change="store.setOrder($event.target.value)"
+        >
+          <option 
+            v-for="option in orderByItems"
+            :value="option"
+            :key="option"
+          >
+            {{ option }}
+          </option>
+        </select>
+        <label for="orderBy">
+          Filter by
+        </label>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { useJobListStore } from '@/stores/jobList';
+import { useJobListStore } from '@/stores/jobListStore';
 import { ref } from 'vue';
 
 const store = useJobListStore();

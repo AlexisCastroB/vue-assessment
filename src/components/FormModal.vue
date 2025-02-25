@@ -1,13 +1,22 @@
 <template>
-  <v-btn
+  <!-- <v-btn
     class="text-none"
     color="black"
     @click="modal = true"
   >
     Apply Now
-  </v-btn>
+  </v-btn> -->
+  <button
+    class="btn btn-dark text-light"
+    id="button"
+    type="button"
+    @click="modal = true"
+  >
+  Apply Now
+  </button>
 
   <v-dialog
+    transition="dialog-top-transition"
     v-model="modal"
     width="auto"
   >
@@ -36,6 +45,7 @@
                     hide-details="auto"
                     label="Full name"
                     required
+                    type="text"
                     variant="underlined"
                     v-model="fullName"
                     :rules="rules.fullName"
@@ -53,6 +63,7 @@
                     hide-details="auto"
                     label="Email"
                     required
+                    type="email"
                     variant="underlined"
                     v-model="email"
                     :rules="rules.email"
@@ -157,7 +168,7 @@ const rules = {
   'coverLetter': [
     value => !!value || 'Cover letter is required',
   ],
-}
+};
 
 const submitForm = async () => {
   const { valid } = await form.value.validate();
@@ -171,19 +182,18 @@ const submitForm = async () => {
   formData.append('coverLetter', coverLetter.value);
 
   // Mocking sent to API
-  setTimeout(async () => {
-    console.log('Form sent successfully.');
-    for(const [key, value] of formData.entries()) {
-      console.log(`${key}: ${value}`);
-    }
-    loading.value = false;
-    modal.value = false;
-    showSnackbar.value = true;
-    
-    fullName.value = null;
-    email.value = null;
-    resume.value = null;
-    coverLetter.value = null;
-  }, "2000");
+  console.log('Form sent successfully.');
+  for(const [key, value] of formData.entries()) {
+    console.log(`${key}: ${value}`);
+  }
+
+  loading.value = false;
+  modal.value = false;
+  showSnackbar.value = true;
+  
+  fullName.value = null;
+  email.value = null;
+  resume.value = null;
+  coverLetter.value = null;
 }
 </script>

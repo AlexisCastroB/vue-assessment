@@ -1,35 +1,44 @@
 <template>
   <div class="search row my-5">
     <div class="col-sm-6 mb-3 mb-sm-0">
-      <v-text-field
-        v-model="jobTitle"
-        hide-details="auto"
-        variant="outlined"
-        label="Job Title"
-        @keyup.enter="goToSearch"
-      >
-      </v-text-field>
+      <div class="form-floating">
+        <input
+          class="form-control"
+          id="jobTitle"
+          type="text"
+          v-model="jobTitle"
+          @keyup.enter="goToSearch"
+        >
+        <label for="jobTitle">
+          Job Title
+        </label>
+      </div>
     </div>
     <div class="col-sm-6">
       <div class="row">
         <div class="col mb-3 mb-sm-0">
-          <v-text-field
-            v-model="location"
-            hide-details="auto"
-            variant="outlined"
-            label="Location"
-            @keyup.enter="goToSearch"
-          >
-          </v-text-field>
+          <div class="form-floating">
+            <input
+              class="form-control"
+              id="location"
+              type="text"
+              v-model="location"
+              @keyup.enter="goToSearch"
+            >
+            <label for="location">
+              Location
+            </label>
+          </div>
         </div>
         <div class="col-sm-auto">
-          <v-btn
-            class="text-none"
-            icon="mdi-magnify"
-            color="black"
+          <button
+            class="btn btn-dark text-light"
+            id="button"
+            type="button"
             @click="goToSearch"
           >
-          </v-btn>
+            Search
+          </button>
         </div>
       </div>
     </div>
@@ -46,8 +55,7 @@ const jobTitle = ref(query.title);
 const location = ref(query.location);
 
 const goToSearch = async () => {
-  console.log(jobTitle.value, location.value)
   await router.replace({ name: 'Job Results', query: { title: jobTitle.value, location: location.value }});
   router.go(0)
-}
+};
 </script>
