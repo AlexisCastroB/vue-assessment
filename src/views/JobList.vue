@@ -1,5 +1,5 @@
 <template>
-  <div class="job-list">
+  <div class="job-list flex-fill">
     <div class="container my-4 w-md-75 w-lg-50">
       <div class="row mb-3">
         <div class="col">

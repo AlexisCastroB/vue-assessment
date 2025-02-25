@@ -38,7 +38,7 @@
           </option>
         </select>
         <label for="orderBy">
-          Filter by
+          Order by
         </label>
       </div>
     </div>
